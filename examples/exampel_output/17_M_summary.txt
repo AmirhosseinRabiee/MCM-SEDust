@@ -1,0 +1,14 @@
+MCMC fit summary : IC10_final/17_M
+CAVEAT: 2 photometry point(s) had NO error in the CSV; an ASSUMED 8% flux error was used for them.
+samples = 3200   acceptance = 0.563
+
+parameter   median      -err        +err
+Tstar      2376.5695     27.3826     27.3153
+Tdust       174.2796     12.3827     25.6422
+tau           0.0540      0.0041      0.0054
+
+shift = -14.49148
+chi2  = 94.879
+Mdot  = 6.5700e-06 Msun/yr  (DUSTY fiducial L=1e4 Lsun; physical Mdot = this x sqrt(L/1e4 Lsun))
+Ve    = 3.710 km/s
+Mmax  = 4.450 Msun
