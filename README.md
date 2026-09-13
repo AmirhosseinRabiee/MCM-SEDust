@@ -35,6 +35,8 @@ MCMC_SEDust/
 │   ├── mcmc_dusty.py         fit ONE source (also the shared library)
 │   ├── fit_catalog.py        fit MANY sources, in parallel, resumably
 │   └── plot_both.py          compare two dust compositions for one source
+├── DUSTY_TEST/           DUSTY's own source + support data + a compile check
+│   └── README.md             what's here and how to compile it
 ├── examples/
 │   ├── demo_data/            a small synthetic photometry file
 │   └── README.md
@@ -45,21 +47,27 @@ MCMC_SEDust/
 └── LICENSE
 ```
 
-**Not included** (these are yours, not the framework's): a compiled DUSTY
-executable, a DUSTY input template for your dust model, and your photometry
-catalog. See the manual for what these need to look like.
+`DUSTY_TEST/` has everything needed to compile DUSTY (see the manual, Section
+2.2) but deliberately **not** a compiled binary — dynamically linked Fortran
+binaries don't reliably run across different machines, so compile it fresh
+wherever you're going to run fits.
+
+**Still yours to supply**: a DUSTY input template for your own dust model,
+and your photometry catalog. See the manual for what these need to look
+like.
 
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/MCMC_SEDust.git
+git clone https://github.com/AmirhosseinRabiee/MCMC-SEDust.git
 cd MCMC_SEDust
 pip install -r requirements.txt
 ```
 
 You also need a working DUSTY V2 installation (Ivezić & Elitzur 1997;
-Elitzur & Ivezić 2001) — MCMC_SEDust runs it as a subprocess but does not
-include or install it.
+Elitzur & Ivezić 2001) — `DUSTY_TEST/` has the source and everything needed
+to compile it; MCMC_SEDust itself runs the resulting executable as a
+subprocess.
 
 ## Quick start
 
