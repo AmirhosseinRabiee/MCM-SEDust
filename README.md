@@ -9,7 +9,7 @@ fitting method is specific to that galaxy — point it at a different
 photometry catalog and different priors, and it works the same way.
 
 Full documentation, including a complete step-by-step guide and an
-explanation of every module, lives in **[`docs/MCMC_SEDust_Manual.pdf`](docs/MCMC_SEDust_Manual.pdf)**.
+explanation of every module, lives in **[`docs/MCMC_SEDust_manual.pdf`](docs/MCMC_SEDust_Manual.pdf)**.
 This README is just a quick orientation.
 
 ## What it does
