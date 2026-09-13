@@ -3,6 +3,6 @@ message: "If you use MCMC_SEDust in your work, please cite it as below, and plea
 title: "MCMC_SEDust: an MCMC framework for dust radiative-transfer SED fitting"
 type: software
 authors:
-  - name: "Amirhossein Rabiee, Hamidreza Mahani"
+  - names: "Amirhossein Rabiee, Hamidreza Mahani"
 license: MIT
 repository-code: "https://github.com/AmirhosseinRabiee/MCMC-SEDust"
