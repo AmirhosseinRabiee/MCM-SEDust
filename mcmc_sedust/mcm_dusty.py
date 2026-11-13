@@ -1,5 +1,5 @@
 """
-mcmc_dusty.py
+mcm_dusty.py
 
 Fits one star: samples the posterior of the three physical parameters
 
