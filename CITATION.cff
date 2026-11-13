@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use MCMC_SEDust in your work, please cite it as below, and please also cite DUSTY (Ivezic & Elitzur 1997; Elitzur & Ivezic 2001) and emcee (Foreman-Mackey et al. 2013), which this code wraps and depends on."
-title: "MCMC_SEDust: an MCMC framework for dust radiative-transfer SED fitting"
+message: "If you use MCM_SEDust in your work, please cite it as below, and please also cite DUSTY (Ivezic & Elitzur 1997; Elitzur & Ivezic 2001) and emcee (Foreman-Mackey et al. 2013), which this code wraps and depends on."
+title: "MCM_SEDust: an MCMC framework for dust radiative-transfer SED fitting"
 type: software
 authors:
   - names: "Amirhossein Rabiee, Hamidreza Mahani"
