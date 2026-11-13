@@ -9,7 +9,7 @@ fitting method is specific to that galaxy — point it at a different
 photometry catalog and different priors, and it works the same way.
 
 Full documentation, including a complete step-by-step guide and an
-explanation of every module, lives in **[`docs/MCM_SEDust_manual.pdf`](docs/MCM_SEDust_manual.pdf)**.
+explanation of every module, lives in **[`docs/MCMC_SEDust_manual.pdf`](docs/MCM_SEDust_manual.pdf)**.
 This README is just a quick orientation.
 
 ## What it does
@@ -29,10 +29,10 @@ cores — see the manual for why.
 
 ```
 MCM_SEDust/
-├── MCM_sedust/          the five modules -- keep them together
+├── MCMC_sedust/          the five modules -- keep them together
 │   ├── dusty_kernel.py       wraps the DUSTY executable
 │   ├── sed_likelihood.py     photometry loading + likelihood
-│   ├── MCM_dusty.py         fit ONE source (also the shared library)
+│   ├── MCMC_dusty.py         fit ONE source (also the shared library)
 │   ├── fit_catalog.py        fit MANY sources, in parallel, resumably
 │   └── plot_both.py          compare two dust compositions for one source
 ├── DUSTY_TEST/           DUSTY's own source + support data + a compile check
@@ -41,7 +41,7 @@ MCM_SEDust/
 │   ├── demo_data/            a small synthetic photometry file
 │   └── README.md
 ├── docs/
-│   └── MCM_SEDust_Manual.pdf   <-- start here
+│   └── MCMC_SEDust_Manual.pdf   <-- start here
 ├── requirements.txt
 ├── CITATION.cff
 └── LICENSE
@@ -59,8 +59,8 @@ like.
 ## Installation
 
 ```bash
-git clone https://github.com/AmirhosseinRabiee/MCM-SEDust.git
-cd MCM_SEDust
+git clone https://github.com/AmirhosseinRabiee/MCMC-SEDust.git
+cd MCMC_SEDust
 pip install -r requirements.txt
 ```
 
@@ -73,7 +73,7 @@ subprocess.
 
 ```bash
 cd /path/to/your/dusty/working/directory   # has the dusty executable + template
-python3 /path/to/MCM_SEDust/MCM_sedust/MCM_dusty.py \
+python3 /path/to/MCMC_SEDust/MCMC_sedust/MCMC_dusty.py \
     --comp M --mode full \
     --data /path/to/your_star.csv --star star1 --format fnu_jy \
     --tstar 2000 4000 --tdust 100 1400 --tau 0.01 2 \
@@ -83,7 +83,7 @@ python3 /path/to/MCM_SEDust/MCM_sedust/MCM_dusty.py \
 For a whole catalog:
 
 ```bash
-python3 /path/to/MCM_SEDust/MCM_sedust/fit_catalog.py \
+python3 /path/to/MCMC_SEDust/MCMC_sedust/fit_catalog.py \
     --comp both --data-dir /path/to/your/catalog --first 1 --last N \
     --out-dir results --nwalkers 16 --nburn 100 --nprod 300 \
     --parallel-stars 64
